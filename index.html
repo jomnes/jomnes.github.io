@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Masari - Private Digital Currency
+        </title>
+        <!-- Start Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- End Favicon -->
+        <style>
+            a
+            {
+                text-decoration: none;
+                color: #6585bb;
+                padding: 10px;
+            }
+            
+            a:hover
+            {
+                color: #85bb65;
+                text-decoration: underline;
+            }
+        
+            body
+            {
+                background: #f8f8f8;
+                font-family: sans-serif;
+            }
+            
+            h1
+            {
+                text-align: center;
+                color: #525252;
+            }
+            
+            h3
+            {
+                text-align: center;
+            }
+            
+            table
+            {
+                width: 100%;
+                table-layout: fixed;
+                
+            }
+            
+            table td
+            {
+                vertical-align: top;
+            }
+            
+            #copyrightTable
+            {
+                text-align: center;
+            }
+            
+            #communityDiv
+            {
+                background: white;
+                border-bottom: 1px solid #d3d3d3;
+                border-radius: 20px;
+                border-right: 1px solid #d3d3d3;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            #communityLinksDiv
+            {
+                padding-top: 15px;
+                padding-bottom: 30px;
+            }
+            
+            #downloadsDiv
+            {
+                background: white;
+                border-bottom: 1px solid #d3d3d3;
+                border-radius: 20px;
+                border-right: 1px solid #d3d3d3;
+                padding: 20px;
+            }
+            
+            #exchangesBlockExploresPoolsTable td
+            {
+                background: white;
+                border-bottom: 1px solid #d3d3d3;
+                border-radius: 20px;
+                border-right: 1px solid #d3d3d3;
+                padding-bottom: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 15px;
+                text-align: center;
+            }
+                        
+            #infoDiv
+            {
+                background: white;
+                border-bottom: 1px solid #d3d3d3;
+                border-radius: 20px;
+                border-right: 1px solid #d3d3d3;
+                padding: 20px;
+            }
+            
+            #infoTable
+            {
+                padding-top: 15px;
+                padding-bottom: 30px;
+            }
+            
+            #infoTable td
+            {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #logo
+            {
+                height: 50px;
+                width: 50px;
+                padding-right: 10px;
+            }
+            
+            #masariTitle
+            {
+                font-weight: bold;
+                color: #525252;
+                font-size: 70px;
+            }
+            
+            #navigationDiv
+            {
+                text-align: center;
+                background: white;
+                border-bottom: 1px solid #d3d3d3;
+                border-radius: 20px;
+                border-right: 1px solid #d3d3d3;
+                margin-top: 10px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+            
+            #roadmapDiv
+            {
+                background: white;
+                border-bottom: 1px solid #d3d3d3;
+                border-radius: 20px;
+                border-right: 1px solid #d3d3d3;
+                padding: 20px;
+            }
+            
+            #roadmapTable
+            {
+                padding-top: 15px;
+                padding-bottom: 30px;
+            }
+            
+            #roadmapTable td
+            {
+                padding: 10px;
+            }
+            
+            #titleDiv
+            {
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            
+            .downloadsTable
+            {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            
+            .downloadsTable td
+            {
+                padding: 10px;
+            }
+            
+            .textCenter
+            {
+                text-align: center;
+            }
+            
+            <!-- .navigationLink -->
+            <!-- { -->
+                <!-- padding-top: 5px; -->
+                <!-- padding-bottom: 5px; -->
+                <!-- color: blue; -->
+            <!-- } -->
+            
+            <!-- .navigationLink:hover -->
+            <!-- { -->
+                <!-- text-decoration: underline; -->
+                <!-- cursor: pointer; -->
+            <!-- } -->
+            
+        </style>
+    </head>
+    <body>
+        <div id="titleDiv">
+            <img id="logo" src="Masari-Logo.png">
+            <span id="masariTitle">Masari</span>
+        </div>
+        <div id="navigationDiv">
+            <table>
+                <tr>
+                    <td>
+                        <a href="#downloadsDiv">Downloads</a>
+                    </td>
+                    <td>
+                        <a href="#exchangesBlockExploresPoolsDiv">Exchanges</a>
+                    </td>
+                    <td>
+                        <a href="#exchangesBlockExploresPoolsDiv">Block Explorers</a>
+                    </td>
+                    <td>
+                        <a href="#exchangesBlockExploresPoolsDiv">Pools</a>
+                    </td>
+                    <td>
+                        <a href="#roadmapDiv">Roadmap</a>
+                    </td>
+                    <td>
+                        <a href="#communityDiv">Community</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/><br/>
+        <div id="infoDiv">
+            <h1>Private Digital Currency Based on Monero</h1>
+            <table id="infoTable">
+                <tr>
+                    <td>
+                        Masari is a private, secure, and fungible cryptocurrency that focuses on usability and scalability.
+                        
+                    </td>
+                    <td>
+                        All Masari transactions are private by default. The sender, receiver, and amounts transferred are hidden from the public, making all transactions untraceable and unlinkable. These privacy features make Masari truely fungibile like cash or gold in real life.
+                    </td>
+                    <td>
+                        Masari has all of the privacy faetures of Monero but aims towards becoming a more user-friendly and scalable currency
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/><br/>
+        
+        <div id="downloadsDiv">
+            <h1>Downloads</h1>
+            <br/>
+            <h3>Command Line Wallet</h3>
+            <table class="downloadsTable">
+                <tr>
+                    <td>Linux</td>
+                    <td>64-bit</td>
+                    <td>
+                        <a href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-linux-x64-v0.1.4.0.tar.gz">masari-linux-x64-v0.1.4.0.tar.gz</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mac OS</td>
+                    <td>64-bit</td>
+                    <td>
+                        <a href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-mac-x64-v0.1.4.0.tar.gz">masari-mac-x64-v0.1.4.0.tar.gz</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Windows</td>
+                    <td>64-bit</td>
+                    <td>
+                        <a href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-win-x64-v0.1.4.0.zip">masari-win-x64-v0.1.4.0.zip</a>
+                    </td>
+                </tr>
+            </table>
+            <h3>GUI Wallet</h3>
+            <table class="downloadsTable">
+                <tr>
+                    <td>Mac OS</td>
+                    <td>64-bit</td>
+                    <td>
+                        <a href="https://github.com/masari-project/masari-wallet-gui/releases/download/v0.1.4.0/masari-gui-mac-x64-v0.1.4.0.tar.gz">masari-gui-mac-x64-v0.1.4.0.tar.gz</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Windows</td>
+                    <td>64-bit</td>
+                    <td>
+                        <a href="https://github.com/masari-project/masari-wallet-gui/releases/download/v0.1.4.0/masari-gui-win-x64-v0.1.4.0.zip">masari-gui-win-x64-v0.1.4.0.zip</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/><br/>
+        
+        <div id="exchangesBlockExploresPoolsDiv">
+            <table id="exchangesBlockExploresPoolsTable">
+                <tr>
+                    <td>
+                        <h1>Exchanges</h1>
+                        <br/>
+                        <a href="https://www.southxchange.com/Market/Book/MSR/BTC">SouthXchange</a>
+                    </td>
+                    <td>
+                        <h1>Block Explorers</h1>
+                        <br/>
+                        <a href="https://msrchain.net">msrchain.net</a>
+                    </td>
+                    <td id="poolsTD">
+                        <h1>Pools</h1>
+                        <br/>
+                        <a href="https://masari.superpools.net">masari.superpools.net</a>
+                        <br/><br/>
+                        <a href="http://masaripool.com">masaripool.com</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/><br/>
+        <div id="roadmapDiv">
+            <h1>Roadmap</h1>
+            <table id="roadmapTable">
+                <tr>
+                    <td class="textCenter">
+                        Q1 2018
+                    </td>
+                    <td class="textCenter">
+                        Subaddresses
+                    </td>
+                    <td>
+                        This Monero upstream feature allows a single Masari private key to issue multiple subaddresses, expanding beyond payment IDs.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCenter">
+                        Q1 2018
+                    </td>
+                    <td class="textCenter">
+                        Multisig
+                    </td>
+                    <td>
+                        This Monero upstream feature will allow for trustless off-chain transactions that would otherwise require a counterparty.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCenter">
+                        Q2 2018
+                    </td>
+                    <td class="textCenter">
+                        Uncle Mining (tentative)
+                    </td>
+                    <td>
+                        This feature unique to Masari allows for a more secure network and for safely reducing block emission rates for better network latency.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCenter">
+                        Q3 2018
+                    </td>
+                    <td class="textCenter">
+                        Mobile Wallet
+                    </td>
+                    <td>
+                        This will expand on the GUI wallet, encompassing mobile devices for day-to-day usability.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/><br/>
+        
+        <div id="communityDiv">
+            <h1>Community</h1>
+            <div id="communityLinksDiv">
+                <a href="http://facebook.com/masaricurrency">Facebook</a>
+                <a href="http://twitter.com/masaricurrency">Twitter</a>
+                <a href="https://reddit.com/r/masari">Reddit</a>
+                <a href="https://github.com/masari-project/masari">GitHub</a>
+                <a href="https://bitcointalk.org/index.php?topic=2159114.0">BitcoinTalk</a>
+            </div>
+        </div>
+        <br/><br/>
+        <div>
+            <table id="copyrightTable">
+                <tr>
+                    <td>
+                        © Copyright 2017
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://getmasari.org/legal.html">Legal</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
